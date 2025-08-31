@@ -405,7 +405,7 @@ static bool Get_object_proximity(player_t *pl, object_t *shot, double sqmaxdist,
   /* ignore if there is enough time to deal with this object  later */
   if((time_until_closest < 0) || (time_until_closest > maxtime))
     /*option instead of fixed value: options.dodgetime))*/
-    return;
+    return false;
 
   /* get the square of the distance */
   sqdistance =
