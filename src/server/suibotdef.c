@@ -338,12 +338,6 @@ static void Robot_set_pointing_direction(player_t *pl,double direction)
 
 /* } */
 
-struct collans {
-    int line;
-    int point;
-    clvec_t moved;
-};
-
 static bool Wall_in_between_points(int cx1, int cy1, int cx2, int cy2);
 static bool Wall_in_between_points(int cx1, int cy1, int cx2, int cy2){ /* Wall between two given points?*/
   
